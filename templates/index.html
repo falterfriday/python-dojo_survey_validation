@@ -25,7 +25,7 @@ Description: Never Stop Learning
     <div id="wrapper">
       <h1>Index Page</h1>
         <form action='/result' method='post'>
-          Your Name: <input type='text' name='name'><br>
+          Your Name: <input type='text' name='name' required><br>
           Dojo Location: 
             <select name="location">
               <option value="">Locations:</option>
@@ -43,7 +43,8 @@ Description: Never Stop Learning
               <option value="jquery">jQuery</option>
               <option value="python">Python</option>
             </select><br>
-          Comments: (optional)<input type='text' action='/result' name='comment'><br>
+          Comments: (optional)<br>
+          <input type='text' maxlength="120" action='/result' name='comment' required><br>
           <input type='submit' value='Submit'>
         </form>
     </div>
